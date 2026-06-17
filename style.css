@@ -342,3 +342,58 @@ p, li {
         font-size: 2.8rem;
     }
 }
+
+/* ============================= */
+/* HERO QUOTE STYLE */
+/* ============================= */
+
+.quote {
+    font-size: 1.4rem;
+    color: #c4b5fd;
+    margin-top: 20px;
+    font-style: italic;
+    max-width: 800px;
+    line-height: 1.6;
+    
+    /* Center alignment */
+    text-align: center;
+    
+    /* Soft glow effect */
+    text-shadow: 0 0 15px rgba(167, 139, 250, 0.25);
+    
+    /* Smooth appearance */
+    animation: fadeInQuote 1.2s ease-in-out;
+}
+
+.quote-author {
+    margin-top: 10px;
+    color: #a78bfa;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    
+    letter-spacing: 1px;
+    opacity: 0.9;
+    
+    animation: fadeInQuote 1.6s ease-in-out;
+}
+
+/* Optional animation */
+@keyframes fadeInQuote {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
